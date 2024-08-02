@@ -1,0 +1,72 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Requests",
+    "line": 1,
+    "id": "requests",
+    "tags": [],
+    "uri": "api.feature",
+    "elements": [
+      {
+        "id": "requests;validar-status-code-e-email-da-requisição-get",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validar status code e email da requisição GET",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "eu realizo uma requisição ao endpoint e valido o status code e o email",
+            "result": {
+              "status": "passed",
+              "duration": 276000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "requests;validar-status-code-e-id-do-post",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Validar status code e ID do POST",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "eu realizo um POST no endpoint e valido o status code e o ID retornado",
+            "result": {
+              "status": "passed",
+              "duration": 259000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "requests;validar-status-code-e-os-dados-alterados-via-put",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Validar status code e os dados alterados via PUT",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "eu realizo um PUT no endpoint e valido o status code e os dados alterados",
+            "result": {
+              "status": "passed",
+              "duration": 511000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

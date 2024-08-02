@@ -1,0 +1,51 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "casual": "^1.6.2",
+    "cucumber-html-reporter": "^5.5.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-tags": "^0.3.0",
+    "cypress-wait-until": "^2.0.0",
+    "faker": "^6.6.6",
+    "imap-simple": "^5.1.0",
+    "lodash": "^4.17.21",
+    "mongodb": "^6.3.0"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.6",
+    "cypress-downloadfile": "^1.2.3",
+    "cypress-plugin-tab": "^1.0.5",
+    "cypress-postgres": "^1.1.1",
+    "eslint": "^7.32.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "moment": "^2.30.1"
+  },
+  "scripts": {
+    "test": "npx cypress open",
+    "cypress:verify": "cypress verify",
+    "cypress:run": "cypress run  --headless --browser chrome --env TAGS='@e2e-test' --spec 'cypress/e2e/**/*.feature'",
+    "postcypress:run": "node ./cypress/support/cucumber-html-reporter.js",
+    "cypress:smoke-test": "cypress run --spec cypress/e2e/smoke-test.spec.js",
+    "cy:tags": "node ./cypress-tags run -e TAGS=@cadastrarcotas",
+    "cypress:ci": "npx cypress run  --spec 'cypress/e2e/**/*.feature'",
+    "lint": "eslint cypress/**/*.js",
+    "lint:fix": "eslint cypress/**/*.js --fix",
+    "CI:io": "npx cypress run --record --key eba9e1f5-0b2e-4e9f-8e03-f458457e1819"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps",
+    "nonGlobalStepDefinitions": false,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "keywords": [],
+  "author": "Renata Waltrick Rodrigues Fernandes",
+  "license": "ISC"
+}

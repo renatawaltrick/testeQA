@@ -1,0 +1,72 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Validar dados",
+    "line": 1,
+    "id": "validar-dados",
+    "tags": [],
+    "uri": "capturarDados.feature",
+    "elements": [
+      {
+        "id": "validar-dados;capturar-e-validar-dados-do-link-de-photos",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Capturar e validar dados do link de Photos",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que eu acesso o link site",
+            "result": {
+              "status": "passed",
+              "duration": 1818000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "eu acesso o menu \"Guide\"",
+            "result": {
+              "status": "passed",
+              "duration": 276000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "eu navego até o link \"/albums/1/photos\" e o abro",
+            "result": {
+              "status": "passed",
+              "duration": 143000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "eu capturo os dados exibidos em tela e os salvo em um array Json",
+            "result": {
+              "status": "passed",
+              "duration": 62000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "valido os dados do objeto com ID \"6\"",
+            "result": {
+              "status": "passed",
+              "duration": 51000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
